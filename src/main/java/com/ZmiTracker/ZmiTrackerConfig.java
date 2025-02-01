@@ -1,11 +1,11 @@
-package com.example;
+package com.ZmiTracker;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup("ZMI Tracker")
+public interface ZmiTrackerConfig extends Config
 {
 	@ConfigItem(
 		keyName = "showTotalRunes",
