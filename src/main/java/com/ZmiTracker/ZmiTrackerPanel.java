@@ -1,8 +1,7 @@
-package com.example;
+package com.ZmiTracker;
 
 import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.game.ItemManager;
-import net.runelite.client.util.ImageUtil;
 import net.runelite.api.ItemID;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -11,12 +10,12 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExamplePanel extends PluginPanel {
+public class ZmiTrackerPanel extends PluginPanel {
     private final ItemManager itemManager;
     private final JLabel totalRunesLabel;
     private final Map<Integer, JLabel> runeLabels;
 
-    public ExamplePanel(ItemManager itemManager) {
+    public ZmiTrackerPanel(ItemManager itemManager) {
         this.itemManager = itemManager;
         this.runeLabels = new HashMap<>();
 
