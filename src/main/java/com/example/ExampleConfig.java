@@ -10,7 +10,7 @@ public interface ExampleConfig extends Config
 	@ConfigItem(
 		keyName = "showTotalRunes",
 		name = "Show total runes?",
-		description = "Placeholder"
+		description = "Shows total runes made."
 	)
 	default boolean showTotalRunes() {
 		return true;
@@ -18,7 +18,7 @@ public interface ExampleConfig extends Config
 	@ConfigItem(
 			keyName = "showRuneTypes",
 			name = "Show all rune types?",
-			description = "Placeholder"
+			description = "Shows individual runes made."
 	)
 	default boolean showRuneTypes() {
 		return true;
