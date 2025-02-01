@@ -8,12 +8,23 @@ import net.runelite.client.config.ConfigItem;
 public interface ExampleConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "showTotalRunes",
+		name = "Show total runes?",
+		description = "Placeholder"
 	)
+	default boolean showTotalRunes() {
+		return true;
+	}
+	@ConfigItem(
+			keyName = "showRuneTypes",
+			name = "Show all rune types?",
+			description = "Placeholder"
+	)
+	default boolean showRuneTypes() {
+		return true;
+	}
 	default String greeting()
 	{
-		return "Hello";
+		return "Placeholder";
 	}
 }
